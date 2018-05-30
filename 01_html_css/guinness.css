@@ -1,0 +1,13 @@
+.my-background-image {
+    background-image: url('https://lph5i1b6c053kq7us26bdk75-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/guinness-facts.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 80vh;
+}
+
+h1{
+    font-weight: 50px;
+    color: cyan;    
+}
