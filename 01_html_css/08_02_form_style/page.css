@@ -10,7 +10,7 @@
 
 /*1. add margin spacing for top & bottom: 20px */
 .my-form-group{
-	margin-top: 20px;
+	margin-top: 20px;	/*can use margin: 20px0*/
 	margin-bottom: 20px;
 }
 
@@ -48,7 +48,7 @@ input[type=email]:focus{
 	/*8. set the border and text color to: orangered*/
 	outline: none;
 	border-color: orangered;
-	color: orangered;
+	border: 1px solid orangered;
 
 }
 
