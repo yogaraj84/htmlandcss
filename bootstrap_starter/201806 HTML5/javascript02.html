@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Javascript 02</title>
+
+    <script language="javascript" type="text/javascript">
+        var myObject;
+
+        myObject = [
+            {
+                "id": 1,
+                "name": "Steven",
+                "dob": "01-Jan-1977",
+                "cars": ["Civic", "Evolution", "Subaru"]
+            }, 
+            {
+                "id": 2,
+                "name": "Eddie",
+                "dob": "18-Dec-1977",
+                "cars": ["QQ", "Chevrolet", "Mini"]
+            }, 
+            {
+                "id": 3,
+                "name": "Grace",
+                "dob": "07-Jul-1977",
+                "cars": ["BMW", "Mercedes", "Lexus"]
+            }];
+
+        var linebreak = "<br>"
+
+        function printData(count){
+            var name = myObject[count].name;
+            var dob = myObject[count].dob;
+            var car = "";
+            var carlen = myObject[count].cars.length;
+
+            for(var i = 0; i < carlen; i++){
+                car += myObject[count].cars[i] + linebreak;
+            }
+
+            document.getElementById("demo").innerHTML += name + linebreak + dob + linebreak + car + linebreak; //append with +=
+        
+        /*  This is the longer way of doing what the line above does
+            var x = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML = x + name + linebreak + dob + linebreak + car + linebreak;  
+        */
+        }
+
+        function whileloopData(){
+            var counter = 0;
+
+            while (counter < myObject.length){
+                printData(counter);
+                counter++;
+            }
+        }
+    </script>
+   
+</head>
+<body>
+    <input type="button" value="Print Data" onclick="whileloopData()"/>
+
+    <p id="demo">
+
+    </p>
+
+    
+
+
+</body>
+</html>
